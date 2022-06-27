@@ -1,5 +1,15 @@
 package com.argprog.springcursosalummno.service;
 
-public class ITemaService {
+import java.util.List;
+import com.argprog.springcursosalummno.model.Tema;
+
+public interface ITemaService {
     
+    public void saveTema(Tema tema);
+
+    public Tema findTema(Long idTema);
+
+    public void deteleTema(Long idTema);
+
+    public List<Tema> getTemas();
 }
