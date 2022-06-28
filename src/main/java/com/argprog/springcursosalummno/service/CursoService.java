@@ -30,4 +30,8 @@ public class CursoService implements ICursoService{
         Curso findedCurso = cursoRepository.findById(idCurso).orElse(null);
         return findedCurso;
     }
+
+    public List<Curso> findCursosByNombreContains(String buscar){
+        return cursoRepository.findCursosByNombreContains(buscar);
+    }
 }

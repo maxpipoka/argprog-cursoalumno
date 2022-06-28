@@ -12,4 +12,6 @@ public interface ICursoService {
     public void deleteCurso(Long idCurso);
 
     public List<Curso> getCursos();
+
+    public List<Curso> findCursosByNombreContains(String buscar);
 }

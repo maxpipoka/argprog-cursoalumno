@@ -1,7 +1,6 @@
 package com.argprog.springcursosalummno.model;
 
 import java.util.Date;
-import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,19 +27,47 @@ public class Curso {
     @Column(nullable = false)
     private Date fechaFinalizacion;
     
-    @Column(nullable = false)
-    private List<Tema> listaDeTemas;
+
 
     public Curso() {
     }
 
-    public Curso(long idCurso, String nombre, String tipoCurso, Date fechaFinalizacion, List<Tema> listaDeTemas) {
+    public Curso(long idCurso, String nombre, String tipoCurso, Date fechaFinalizacion) {
         this.idCurso = idCurso;
         this.nombre = nombre;
         this.tipoCurso = tipoCurso;
         this.fechaFinalizacion = fechaFinalizacion;
-        this.listaDeTemas = listaDeTemas;
     }
 
-    
+    public long getIdCurso() {
+        return idCurso;
+    }
+
+    public void setIdCurso(long idCurso) {
+        this.idCurso = idCurso;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTipoCurso() {
+        return tipoCurso;
+    }
+
+    public void setTipoCurso(String tipoCurso) {
+        this.tipoCurso = tipoCurso;
+    }
+
+    public Date getFechaFinalizacion() {
+        return fechaFinalizacion;
+    }
+
+    public void setFechaFinalizacion(Date fechaFinalizacion) {
+        this.fechaFinalizacion = fechaFinalizacion;
+    }
 }

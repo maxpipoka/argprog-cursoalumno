@@ -39,5 +39,37 @@ public class Tema {
         this.curso = curso;
     }
 
+    public Long getIdTema() {
+        return idTema;
+    }
+
+    public void setIdTema(Long idTema) {
+        this.idTema = idTema;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
     
 }
